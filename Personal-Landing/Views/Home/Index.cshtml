@@ -1,0 +1,72 @@
+@{
+    ViewData["Title"] = "Rambod Savaheli Moghadam | رامبد سواحلی مقدم";
+    ViewData["Logo-FullName"] = "Rambod Savaheli Moghadam";
+    ViewData["Job-Title"] = "Backend Developer | Asp.net Core";
+    ViewData["Virgol-Url"] = "https://virgool.io/@rambodsm";
+    ViewData["Telegram-Url"] = "https://t.me/rambodsm";
+    ViewData["Linkedin-Url"] = "https://www.linkedin.com/in/rambod-savaheli-moghadam-760274189";
+    ViewData["Github-Url"] = "https://github.com/rambodsm";
+    ViewData["Twitter-Url"] = "https://twitter.com/rambodsm";
+    ViewData["Instagram-Url"] = "https://www.instagram.com/rambodsm/";
+}
+
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="سایت شخصی رامبد سواحلی مقدم - برنامه نویس وب">
+    <meta name="author" content="Rambod Savaheli Moghadam">
+    <meta name="keywords" content="Asp.Net, Asp.net Core, رامبد سواحلی مقدم,برنامه نویس وب ,Rambod Savaheli Moghadam">
+    <title>@ViewData["Title"]</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<section>
+    <div class="card">
+        <img class="card-image" src="images/profile.jpg" alt="profile-avatar"/>
+        <div class="card-description" href="#" target="_blank">
+            <p class="logo-full-name">@ViewData["Logo-FullName"]</p>
+            <p class="job-title job-title-font">@ViewData["Job-Title"]</p>
+        </div>
+    </div>
+</section>
+<section>
+    <div class="social-media-list">
+        <div class="social-media-item">
+            <a href="@ViewData["Github-Url"]" title="Github">
+                <span class="icon-github"></span>
+            </a>
+        </div>
+        <div class="social-media-item">
+            <a href="@ViewData["Linkedin-Url"]" title="LinkedIn">
+                <span class="icon-linkedin2"></span>
+            </a>
+        </div>
+        <div class="social-media-item">
+            <a href="@ViewData["Telegram-Url"]" title="Telegram">
+                <span class="icon-telegram"></span>
+            </a>
+        </div>
+        <div class="social-media-item">
+            <a href="@ViewData["Virgol-Url"]" title="Blog">
+                <span class="icon-blogger"></span>
+            </a>
+        </div>
+        <div class="social-media-item">
+            <a href="@ViewData["Twitter-Url"]" title="Twitter">
+                <span class="icon-twitter"></span>
+            </a>
+        </div>
+        <div class="social-media-item">
+            <a href="@ViewData["Instagram-Url"]" title="instagram">
+                <span class="icon-instagram"></span>
+            </a>
+        </div>
+    </div>
+</section>
+
+</body>
+</html>
